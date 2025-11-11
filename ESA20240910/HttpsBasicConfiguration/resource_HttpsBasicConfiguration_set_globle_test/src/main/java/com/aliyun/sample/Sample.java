@@ -194,9 +194,7 @@ public class Sample {
         // Init client
         com.aliyun.esa20240910.Client esa20240910Client = Sample.createESA20240910Client();
         // Init resource
-        //resource_RatePlanInstance_set_globle_test
         PurchaseRatePlanResponseBody ratePlanInstRespBody = Sample.ratePlanInst(esa20240910Client);
-        //resource_HttpBasicConfiguration_set_global_test
         CreateSiteResponseBody httpBasicConfRespBody = Sample.httpBasicConf(ratePlanInstRespBody, esa20240910Client);
         CreateHttpsBasicConfigurationResponseBody httpsBasicConfRespBody = Sample.httpsBasicConf(httpBasicConfRespBody, esa20240910Client);
         // update resource

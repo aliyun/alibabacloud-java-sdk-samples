@@ -201,9 +201,7 @@ public class Sample {
         // Init client
         com.aliyun.esa20240910.Client esa20240910Client = Sample.createESA20240910Client();
         // Init resource
-        //resource_HttpRequestHeaderModificationRule_test
         PurchaseRatePlanResponseBody ratePlanInstRespBody = Sample.ratePlanInst(esa20240910Client);
-        //resource_Site_HttpRequestHeaderModificationRule_test
         CreateSiteResponseBody siteRespBody = Sample.site(ratePlanInstRespBody, esa20240910Client);
         CreateHttpRequestHeaderModificationRuleResponseBody reqHdrModRuleRespBody = Sample.reqHdrModRule(siteRespBody, esa20240910Client);
         // update resource

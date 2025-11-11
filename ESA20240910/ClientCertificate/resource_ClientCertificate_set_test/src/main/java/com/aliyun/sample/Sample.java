@@ -188,9 +188,7 @@ public class Sample {
         // Init client
         com.aliyun.esa20240910.Client esa20240910Client = Sample.createESA20240910Client();
         // Init resource
-        //resource_RatePlanInstance_ClientCertificate_set_test
         PurchaseRatePlanResponseBody ratePlanInstCltCertRespBody = Sample.ratePlanInstCltCert(esa20240910Client);
-        //resource_Site_ClientCerticificate_set_test
         CreateSiteResponseBody siteCltCertRespBody = Sample.siteCltCert(ratePlanInstCltCertRespBody, esa20240910Client);
         CreateClientCertificateResponseBody cltCertRespBody = Sample.cltCert(siteCltCertRespBody, esa20240910Client);
         // update resource
